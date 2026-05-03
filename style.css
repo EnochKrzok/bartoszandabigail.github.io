@@ -1,0 +1,210 @@
+/* styles the body*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:white;
+	color:black;
+	margin: 0;
+}
+
+/* styles the body when in dark mode*/
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+
+/* styles the table*/
+table, td {
+	border: 0px solid black;
+	border-collapse: collapse;
+}
+
+/* styles the table cell*/
+td {
+	padding: 5px;
+	text-align: center;
+}
+
+/* makes a hover effect for images*/
+img {
+	vertical-align: middle;
+	opacity: 1;
+}
+img:hover {
+	opacity: 0.5;
+}
+
+/* Container for flexboxes */
+section {
+	display: -webkit-flex;
+	display: flex;
+}
+
+/* Style the left colum and its dark mode */
+.textCol {
+    -webkit-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+    background: #ccc;
+    padding: 20px;
+}
+.textColDark-mode {
+    -webkit-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+    background: #393939;
+    padding: 20px;
+}
+
+/* Style theright colum and the dark mode of that*/
+.imageCol {
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+.imageColDark-mode {
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    background-color: #858585;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+h6 {opacity:0}
+h6:hover {opacity:1}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+       -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* stlyles the navigation bar*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul.topnav li {float: left;}
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* makes the text like cool buttons*/
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #00ffff; color: #111;}
+
+ul.topnav li.right {float: right;}
+/*makes a list of the navigation-bar when the width of the screen is small*/
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+
+/*everything for the slide show*/
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
