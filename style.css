@@ -1,35 +1,37 @@
 /* Style the list inside the menu */
-nav ol {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
 /* stlyles the navigation bar*/
-ol.topnav {
+ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
-ol.topnav li {float: right;}
-ol.topnav li a {
+ul.topnav li {float: right;}
+ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 /* makes the text like cool buttons*/
-ol.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-ol.topnav li a.active {background-color: #00ffff; color: #111;}
+ul.topnav li a.active {background-color: #00ffff; color: #111;}
 
-ol.topnav li.left {float: left;}
+ul.topnav li.left {float: left;}
+
 /*makes a list of the navigation-bar when the width of the screen is small*/
 @media screen and (max-width: 600px) {
-    ol.topnav li.right, 
-    ol.topnav li {float: none;}
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
 }
 
 /*-------------------------------------------------*/
