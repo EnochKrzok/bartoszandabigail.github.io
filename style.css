@@ -1,3 +1,48 @@
+/* Style the list inside the menu */
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* stlyles the navigation bar*/
+ol.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ol.topnav li {float: right;}
+ol.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* makes the text like cool buttons*/
+ol.topnav li a:hover:not(.active) {background-color: #111;}
+
+ol.topnav li a.active {background-color: #00ffff; color: #111;}
+
+ol.topnav li.left {float: left;}
+/*makes a list of the navigation-bar when the width of the screen is small*/
+@media screen and (max-width: 600px) {
+    ol.topnav li.right, 
+    ol.topnav li {float: none;}
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+
+
 /* styles the body*/
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -6,11 +51,6 @@ body {
 	margin: 0;
 }
 
-/* styles the body when in dark mode*/
-.dark-mode {
-	background-color: black;
-	color: white;
-}
 
 /* styles the table*/
 table, td {
@@ -24,51 +64,18 @@ td {
 	text-align: center;
 }
 
-/* makes a hover effect for images*/
+/* align images*/
 img {
 	vertical-align: middle;
 	opacity: 1;
 }
-img:hover {
-	opacity: 0.5;
-}
+
+
 
 /* Container for flexboxes */
 section {
 	display: -webkit-flex;
 	display: flex;
-}
-
-/* Style the left colum and its dark mode */
-.textCol {
-    -webkit-flex: 8;
-    -ms-flex: 8;
-    flex: 8;
-    background: #ccc;
-    padding: 20px;
-}
-.textColDark-mode {
-    -webkit-flex: 8;
-    -ms-flex: 8;
-    flex: 8;
-    background: #393939;
-    padding: 20px;
-}
-
-/* Style theright colum and the dark mode of that*/
-.imageCol {
-    -webkit-flex: 4;
-    -ms-flex: 4;
-    flex: 4;
-    background-color: #f1f1f1;
-    padding: 10px;
-}
-.imageColDark-mode {
-    -webkit-flex: 4;
-    -ms-flex: 4;
-    flex: 4;
-    background-color: #858585;
-    padding: 10px;
 }
 
 /* Style the footer */
@@ -88,39 +95,15 @@ h6:hover {opacity:1}
     }
 }
 
-/* Style the list inside the menu */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-/* stlyles the navigation bar*/
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-ul.topnav li {float: left;}
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-/* makes the text like cool buttons*/
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #00ffff; color: #111;}
-
-ul.topnav li.right {float: right;}
-/*makes a list of the navigation-bar when the width of the screen is small*/
-@media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-}
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
 
 
 /*everything for the slide show*/
