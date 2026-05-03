@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- link to my css stylesheet-->
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<script>
+//method to go to dark mode
+function darkMode() {
+   var element = document.body;
+   var left = document.getElementById("textC");
+   var right = document.getElementById("imageC");
+   element.classList.toggle("dark-mode");
+   left.classList.toggle("textColDark-mode");
+   right.classList.toggle("imageColDark-mode");
+}
+
+</script>
+</head>
+<body>
+<!-- this is my navigation bar with all the links to other pages and a dark mode -->
+<ul class="topnav">
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="table.html">Table</a></li>
+  <li><a href="slideShow.html">SlideShow</a></li>
+  <li><a href="evaluation.html">Evaluation</a></li>
+  <li class="right"><a onclick="darkMode()">Dark/Light</a></li>
+</ul>
+
+<section>
+<!-- this divides my page into 2 down the middle the id is only there for my darkMode() function to work the class is imported from style.css -->
+  <div id="textC" class="textCol">
+    <h1>Chess in AI and Website</h1>
+	<p>This website is about the search methods used in chess engines and an evaluation of said website with a really random slideshow. Hope you enjoy.</p>
+  </div>
+  
+  <div id="imageC" class="imageCol">
+    <img src="kitchenFloor.jpg" width="90%">
+  </div>
+</section>
+
+<footer>
+<!-- a normal footer with my name on it -->
+  <p>Done By The One And Only Enoch Jozue Krzok</p><h6>hopefully</h6>
+</footer>
+
+</body>
+</html>
